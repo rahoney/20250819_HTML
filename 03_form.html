@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 테스트</title>
+
+  </head>
+  <body>
+    <form>
+        <p>
+            <ul>
+                <li>https://search.naver.com/search.naver
+                <li><?where=nexearch</li>
+                <li>&sm=top_sug.pre
+                <li>&fbm=0</li>
+                <li>&acr=2</li>
+                <li>&acq=%EC%9E%90%EB%B0%94</li>
+                <li>&qdt=0&ie=utf8</li>
+                <li>&query=%EC%9E%90%EB%B0%94&ackey=9cucmom3</li>
+            </ul>
+            </p>
+    </form>
+    <form action="https://search.naver.com/search.naver"
+        method="get">
+        <label> 검색어 :         
+        <input type="text" name="query" 
+        placeholder="검색어를 입력하세요" 
+        required>
+        </label>
+
+        <button>검색</button>
+    </form>
+
+    <form action="https://search.naver.com/search.naver"
+        method="get">
+        <label> 검색어 :  
+            <select name="query">
+                <option>JAVA</option>
+                <option>SQL</option>       
+                <option>HTML</option>    
+            </select>   
+        </label>
+        <button>검색</button>
+    </form>
+
+    <form action="https://search.naver.com/search.naver"
+        method="get">
+         <label>
+            검색어 :
+            <label>
+                <input type="radio" name="query" value="스프링부트"> 스프링부트
+            </label>
+            <label>
+                <input type="radio" name="query" value="JPA"> JPA
+            </label>
+            <label>
+                <input type="radio" name="query" value="JSP"> JSP
+            </label>
+        </label>
+        <button>검색</button>
+    </form>
+
+    <form action="https://search.naver.com/search.naver"
+        method="get">
+         <label>
+            검색어 :
+            <input type="text" name="query" list="keywords">
+            <datalist id="keywords">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+            </datalist>
+        </label>
+        <button>검색</button>
+    </form>
+
+  </body>
+</html>
